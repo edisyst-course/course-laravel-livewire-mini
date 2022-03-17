@@ -20,6 +20,9 @@
                             <li>
                                 <a href="{{ route('autorefresh') }}">Auto refresh</a>
                             </li>
+                            <li>
+                                <a href="{{ route('slug') }}">Slug</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

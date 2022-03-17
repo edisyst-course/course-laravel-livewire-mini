@@ -14,13 +14,19 @@ class Parentchildren extends Component
     {
         $this->allProducts = Product::all();
         $this->orderProducts = [
-            ['product_id' => '', 'quantity' => 1]
+            [
+                'product_id' => '',
+                'quantity'   => 1
+            ]
         ];
     }
 
     public function addProduct() // aggiungi product all'array
     {
-        $this->orderProducts[] = ['product_id' => '', 'quantity' => 1];
+        $this->orderProducts[] = [
+            'product_id' => '',
+            'quantity'   => 1
+        ];
     }
 
     public function removeProduct($index) // rimuovi product dall'array

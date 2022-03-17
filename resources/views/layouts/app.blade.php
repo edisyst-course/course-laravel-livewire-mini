@@ -51,6 +51,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('autorefresh') }}">{{ __('Auto Refresh') }}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('slug') }}">{{ __('Slug') }}</a>
+                        </li>
                     </ul>
                 </div>
             </div>

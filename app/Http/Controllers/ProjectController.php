@@ -11,7 +11,6 @@ class ProjectController extends Controller
     {
         return view('projects.dropdown');
     }
-
     public function postDropdowns(Request $request)
     {
         return $request->all();
@@ -23,7 +22,6 @@ class ProjectController extends Controller
     {
         return view('projects.parentchildren');
     }
-
     public function postParentchildren(Request $request)
     {
         return $request->all();

@@ -30,6 +30,7 @@ class CountriesCitiesSeeder extends Seeder
         $country = Country::create(['name' => 'United States']);
         $country->cities()->create(['name' => 'Washington']);
         $country->cities()->create(['name' => 'New York City']);
+        $country->cities()->create(['name' => 'Kansas City']);
         $country->cities()->create(['name' => 'Denver']);
     }
 }

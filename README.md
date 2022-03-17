@@ -1,9 +1,6 @@
-Controllare i seeder di tutti per migliorare i dati di test
-
 # Dropdowns
 
-la prima select determina le option della seconda select 
-
+La prima select determina le option della seconda select 
 
     // si aggiorna all'update dell'elemento [name="country"] o forse wire:model="country"
     public function updatedCountry($value)
@@ -17,19 +14,21 @@ la prima select determina le option della seconda select
 
 # Parentchildren
 
-Perfezionare il seeder 
-
 Controllare i metodi della classe Livewire
+
+Un ordine ha tanti prodotti (che posso aggiungere/rimuovere)
 
 
 
 # Editmodal
+Ho un elenco di righe e al clic il modal mi fa modificare quella selezionata
 
 
 # Autorefresh
+Ogni 3 secondi una diversa foto di gattini
 
 
 # Slug
+Trasforma in tempo reale il titolo in uno slug
 
-da provare e vedere
 
