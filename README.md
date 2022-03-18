@@ -29,6 +29,6 @@ Ogni 3 secondi una diversa foto di gattini
 
 
 # Slug
-Trasforma in tempo reale il titolo in uno slug
 
+L'update di $this->name triggera il metodo createSlug di un pkg esterno
 
