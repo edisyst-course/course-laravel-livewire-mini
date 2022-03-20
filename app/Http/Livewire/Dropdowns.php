@@ -16,8 +16,8 @@ class Dropdowns extends Component
 
     public function mount()
     {
-        $this->countries = Country::all();
-        $this->cities = collect();
+        $this->countries = Country::all(); // collection coi dati
+        $this->cities = collect();         // collection vuota
     }
 
     public function render()
@@ -25,7 +25,7 @@ class Dropdowns extends Component
         return view('livewire.dropdowns');
     }
 
-    // si aggiorna all'update dell'elemento [name="country"] o forse wire:model="country"
+    // si aggiorna all'update dell'elemento wire:model="country"
     public function updatedCountry($value)
     {
         $this->cities = City::where('country_id', $value)->get();

@@ -21,7 +21,7 @@ class Parentchildren extends Component
         ];
     }
 
-    public function addProduct() // aggiungi product all'array
+    public function addProduct() // aggiungi product all'array orderProducts
     {
         $this->orderProducts[] = [
             'product_id' => '',
@@ -29,7 +29,7 @@ class Parentchildren extends Component
         ];
     }
 
-    public function removeProduct($index) // rimuovi product dall'array
+    public function removeProduct($index) // rimuovi product dall'array orderProducts
     {
         unset($this->orderProducts[$index]);
         $this->orderProducts = array_values($this->orderProducts);

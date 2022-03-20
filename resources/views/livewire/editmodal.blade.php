@@ -13,8 +13,7 @@
                 <td>{{ $product->name }}</td>
                 <td>{{ $product->price }}</td>
                 <td>
-                    <a wire:click.prevent="edit({{ $product->id }})"
-                       href="#" class="btn btn-sm btn-primary">Edit</a>
+                    <a wire:click.prevent="edit({{ $product->id }})" href="#" class="btn btn-sm btn-primary">Edit</a>
                 </td>
             </tr>
         @empty

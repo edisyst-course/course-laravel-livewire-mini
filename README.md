@@ -1,15 +1,7 @@
 # Dropdowns
+La select `wire:model="country"` determina le option della select `wire:model="city"`.
 
-La prima select determina le option della seconda select 
-
-    // si aggiorna all'update dell'elemento [name="country"] o forse wire:model="country"
-    public function updatedCountry($value)
-
-    public $countries; // la lista intera
-    public $cities;
-
-    public $country; // l'elemento selezionato al momento
-    public $city;
+La seconda select si aggiorna all'update dell'elemento `wire:model="country"`
 
 
 # Parentchildren
@@ -18,17 +10,21 @@ Controllare i metodi della classe Livewire
 
 Un ordine ha tanti prodotti (che posso aggiungere/rimuovere)
 
+    wire:model="orderProducts.{{$index}}.product_id"
+    wire:model="orderProducts.{{$index}}.quantity"
 
 
 # Editmodal
-Ho un elenco di righe e al clic il modal mi fa modificare quella selezionata
+Nei mopdal uso sempre una variabile del tipo `public $showModal = false;`
+
+Ho un elenco di righe e al clic il modal fa editare quella selezionata
 
 
 # Autorefresh
-Ogni 3 secondi una diversa foto di gattini
+Con `wire:poll.3s` ogni 3 sec si lancia una chiamata per una diversa foto di gatti
 
 
 # Slug
 
-L'update di $this->name triggera il metodo createSlug di un pkg esterno
+L'update di `$this->name` triggera il metodo `createSlug` di un pkg esterno
 

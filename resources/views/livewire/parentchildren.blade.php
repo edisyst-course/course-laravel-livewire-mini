@@ -3,8 +3,7 @@
         @csrf
         <div class="form-group {{ $errors->has('customer_name') ? 'has-error' : '' }}">
             Customer name
-            <input type="text" name="customer_name" class="form-control"
-                   value="{{ old('customer_name') }}" required>
+            <input type="text" name="customer_name" class="form-control" value="{{ old('customer_name') }}" required>
             @if($errors->has('customer_name'))
                 <em class="invalid-feedback">
                     {{ $errors->first('customer_name') }}
@@ -13,8 +12,7 @@
         </div>
         <div class="form-group {{ $errors->has('customer_email') ? 'has-error' : '' }}">
             Customer email
-            <input type="email" name="customer_email" class="form-control"
-                   value="{{ old('customer_email') }}">
+            <input type="email" name="customer_email" class="form-control" value="{{ old('customer_email') }}">
             @if($errors->has('customer_email'))
                 <em class="invalid-feedback">
                     {{ $errors->first('customer_email') }}
@@ -40,9 +38,8 @@
                     @foreach ($orderProducts as $index => $orderProduct)
                         <tr>
                             <td>
-                                <select name="orderProducts[{{$index}}][product_id]"
-                                        wire:model="orderProducts.{{$index}}.product_id"
-                                        class="form-control">
+                                <select name="orderProducts[{{$index}}][product_id]" class="form-control"
+                                        wire:model="orderProducts.{{$index}}.product_id">
                                     <option value="">-- choose product --</option>
                                     @foreach ($allProducts as $product)
                                         <option value="{{ $product->id }}">
@@ -53,8 +50,7 @@
                             </td>
                             <td>
                                 <input type="number"
-                                       name="orderProducts[{{$index}}][quantity]"
-                                       class="form-control"
+                                       name="orderProducts[{{$index}}][quantity]" class="form-control"
                                        wire:model="orderProducts.{{$index}}.quantity" />
                             </td>
                             <td>

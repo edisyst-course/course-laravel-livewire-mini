@@ -10,7 +10,7 @@ class Editmodal extends Component
     public $showModal = false;
     public $product;
 
-    // validazioni
+    // Livewire validators: posso metterle qui esternamente oppure dentro save()
     protected $rules = [
         'product.name' => 'required',
         'product.price' => 'required',
